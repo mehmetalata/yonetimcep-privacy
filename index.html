@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YönetimCep — Gizlilik Politikası & KVKK</title>
+  <meta name="description" content="YönetimCep Apartman Yönetim Uygulaması Gizlilik Politikası ve KVKK Aydınlatma Metni" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #F7F9FC; color: #1A2B45; line-height: 1.6; }
+    header {
+      background: linear-gradient(135deg, #1E3A8A 0%, #1E60FF 100%);
+      color: white; padding: 48px 24px 40px; text-align: center;
+    }
+    .header-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px; padding: 6px 16px; font-size: 13px; font-weight: 600; margin-bottom: 20px;
+    }
+    header h1 { font-size: clamp(24px, 5vw, 36px); font-weight: 800; margin-bottom: 10px; }
+    header p { font-size: 15px; opacity: 0.85; max-width: 520px; margin: 0 auto; }
+    .header-meta { display: flex; justify-content: center; gap: 24px; margin-top: 24px; flex-wrap: wrap; }
+    .header-meta span { display: flex; align-items: center; gap: 6px; font-size: 13px; opacity: 0.8; }
+    main { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
+    .alert {
+      background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: 16px;
+      padding: 16px 20px; display: flex; gap: 14px; align-items: flex-start; margin-bottom: 32px;
+    }
+    .alert-icon {
+      width: 42px; height: 42px; background: #1E60FF; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px;
+    }
+    .alert h3 { font-size: 14px; font-weight: 700; color: #1E3A8A; margin-bottom: 4px; }
+    .alert p  { font-size: 13px; color: #3B5998; line-height: 1.5; }
+    .section {
+      background: white; border: 1px solid #E8EDF5; border-radius: 20px;
+      padding: 28px; margin-bottom: 20px; transition: box-shadow 0.2s;
+    }
+    .section:hover { box-shadow: 0 8px 24px rgba(30,96,255,0.07); }
+    .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+    .section-num {
+      width: 36px; height: 36px; background: #EDE9FE; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px; font-weight: 800; color: #6366F1; flex-shrink: 0;
+    }
+    .section-header h2 { font-size: 16px; font-weight: 700; color: #1A2B45; }
+    .section p { font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 12px; }
+    .section p:last-child { margin-bottom: 0; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .tag { background: #F1F5F9; border: 1px solid #E2E8F0; border-radius: 8px; padding: 5px 12px; font-size: 13px; font-weight: 600; color: #334155; }
+    .perm-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13.5px; }
+    .perm-table th { background: #F8FAFC; padding: 10px 14px; text-align: left; font-size: 12px; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #E2E8F0; }
+    .perm-table td { padding: 12px 14px; border-bottom: 1px solid #F1F5F9; color: #334155; vertical-align: top; }
+    .perm-table tr:last-child td { border-bottom: none; }
+    .perm-table td:first-child { font-weight: 600; white-space: nowrap; }
+    .badge-green { display: inline-block; background: #DCFCE7; color: #166534; border-radius: 6px; padding: 2px 8px; font-size: 11px; font-weight: 700; }
+    .badge-blue  { display: inline-block; background: #DBEAFE; color: #1E3A8A; border-radius: 6px; padding: 2px 8px; font-size: 11px; font-weight: 700; }
+    .contact-card {
+      background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+      border-radius: 20px; padding: 32px; color: white; text-align: center; margin-top: 32px;
+    }
+    .contact-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+    .contact-card p  { font-size: 14px; opacity: 0.75; margin-bottom: 20px; }
+    .contact-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .contact-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px; padding: 10px 20px; color: white; text-decoration: none;
+      font-size: 14px; font-weight: 600; transition: background 0.2s;
+    }
+    .contact-link:hover { background: rgba(255,255,255,0.2); }
+    footer { text-align: center; padding: 24px; color: #94A3B8; font-size: 13px; border-top: 1px solid #E8EDF5; }
+    footer a { color: #1E60FF; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">&#128274; KVKK Uyumlu</div>
+  <h1>YönetimCep</h1>
+  <p>Gizlilik Politikası &amp; Kişisel Verilerin Korunması Aydınlatma Metni</p>
+  <div class="header-meta">
+    <span>&#128197; Son Güncelleme: Eylül 2026</span>
+    <span>&#9878;&#65039; 6698 Sayılı KVKK Kapsamında</span>
+    <span>&#127470;&#127479; Türkiye Cumhuriyeti</span>
+  </div>
+</header>
+
+<main>
+
+  <div class="alert">
+    <div class="alert-icon">&#8505;&#65039;</div>
+    <div>
+      <h3>Bu Belge Hakkında</h3>
+      <p>Bu aydınlatma metni, YönetimCep mobil uygulamasını kullanan tüm yönetici ve sakinlere yönelik olarak 6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK) Madde 10 kapsamında hazırlanmıştır.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2>Veri Sorumlusu</h2>
+    </div>
+    <p>YönetimCep Apartman &amp; Site Yönetim Sistemi olarak, kişisel verilerinizin işlenmesinde 6698 Sayılı KVKK kapsamında <strong>veri sorumlusu</strong> sıfatıyla hareket etmekteyiz.</p>
+    <p>İletişim: <strong>destek@yonetimcep.com</strong></p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2>İşlenen Kişisel Veriler</h2>
+    </div>
+    <p>Uygulama aracılığıyla aşağıdaki kişisel veriler işlenmektedir:</p>
+    <div class="tag-list">
+      <span class="tag">&#128100; Ad Soyad</span>
+      <span class="tag">&#128241; Telefon Numarası</span>
+      <span class="tag">&#128231; E-posta Adresi</span>
+      <span class="tag">&#127968; Daire Numarası</span>
+      <span class="tag">&#128663; Araç Plakası</span>
+      <span class="tag">&#128179; Ödeme / Aidat Dekontları</span>
+      <span class="tag">&#128276; FCM Cihaz Bildirimi Token</span>
+    </div>
+    <p style="margin-top:14px;">Bu veriler yalnızca apartman yönetimi hizmetlerinin ifası amacıyla işlenmekte; reklam, pazarlama veya üçüncü taraflarla paylaşım amacıyla kullanılmamaktadır.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2>İşleme Amacı ve Hukuki Dayanak</h2>
+    </div>
+    <p>Kişisel verileriniz aşağıdaki amaçlarla, KVKK Madde 5/2 kapsamındaki hukuki sebeplere dayanılarak işlenmektedir:</p>
+    <ul style="padding-left:20px; margin-top:10px; color:#475569; font-size:14px; line-height:2.2;">
+      <li>Apartman içi aidat ve ödeme takibinin sağlanması</li>
+      <li>Arıza ve taleplerin yönetilmesi</li>
+      <li>Duyuruların sakinlere iletilmesi</li>
+      <li>Push bildirimleri (Firebase Cloud Messaging) aracılığıyla bilgilendirme</li>
+      <li>Davet bağlantısı (Magic Link) ile güvenli kayıt sürecinin yürütülmesi</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2>Uygulama İzinleri</h2>
+    </div>
+    <p>Uygulama, aşağıdaki sistem izinlerine yalnızca açık kullanıcı onayıyla erişmektedir:</p>
+    <table class="perm-table">
+      <thead>
+        <tr><th>İzin</th><th>Kullanım Amacı</th><th>Zorunlu mu?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&#128247; Kamera</td>
+          <td>Arıza bildirimi fotoğrafı ve profil görseli</td>
+          <td><span class="badge-blue">İsteğe Bağlı</span></td>
+        </tr>
+        <tr>
+          <td>&#128444;&#65039; Galeri</td>
+          <td>Aidat dekontu ve evrak yükleme</td>
+          <td><span class="badge-blue">İsteğe Bağlı</span></td>
+        </tr>
+        <tr>
+          <td>&#128276; Bildirim</td>
+          <td>Aidat, duyuru ve talep bildirimleri</td>
+          <td><span class="badge-blue">İsteğe Bağlı</span></td>
+        </tr>
+        <tr>
+          <td>&#127758; Yerel Ağ</td>
+          <td>Yönetim sunucusuna bağlantı</td>
+          <td><span class="badge-green">Gerekli</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2>Verilerin Güvenliği ve Saklanması</h2>
+    </div>
+    <p>Kişisel verileriniz HTTPS şifreli iletişim kanalları üzerinden Render bulut altyapısında saklanmaktadır. Verileriniz hiçbir koşulda üçüncü taraf reklam, pazarlama veya analitik şirketleriyle paylaşılmamaktadır.</p>
+    <p>Uygulama PIN kodu ve 15 dakikalık oturum zaman aşımı gibi bankacılık standardı güvenlik önlemleri uygulanmaktadır. PIN kodları kriptografik olarak hash'lenerek saklanır; hiçbir zaman düz metin olarak tutulmaz.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h2>Kullanıcı Hakları (KVKK Madde 11)</h2>
+    </div>
+    <p>6698 Sayılı KVKK'nın 11. maddesi kapsamında aşağıdaki haklara sahipsiniz:</p>
+    <ul style="padding-left:20px; margin-top:10px; color:#475569; font-size:14px; line-height:2.2;">
+      <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+      <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+      <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+      <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+      <li>Eksik veya yanlış işlenen verilerin düzeltilmesini isteme</li>
+      <li><strong>Profilinizi Uygulama içi Profil ekranından kalıcı olarak silme</strong></li>
+    </ul>
+    <p style="margin-top:12px;">Taleplerinizi <strong>destek@yonetimcep.com</strong> adresine iletebilirsiniz. Talepler 30 gün içinde yanıtlanır.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <h2>Çocukların Gizliliği</h2>
+    </div>
+    <p>YönetimCep, 13 yaşın altındaki kullanıcılara yönelik değildir. Uygulama yalnızca apartman yöneticileri ve reşit sakinlere hitap etmektedir. 13 yaşın altında bir kullanıcıya ait veri fark edildiğinde derhal silinecektir.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">8</div>
+      <h2>Politika Değişiklikleri</h2>
+    </div>
+    <p>Bu gizlilik politikası gerektiğinde güncellenebilir. Önemli değişiklikler uygulama içi bildirim veya e-posta yoluyla kullanıcılara duyurulacaktır. Politikanın güncel sürümü her zaman bu sayfada yer alacaktır.</p>
+  </div>
+
+  <div class="contact-card">
+    <h3>&#128233; Bize Ulaşın</h3>
+    <p>KVKK ve gizlilikle ilgili her türlü soru, talep veya şikayetiniz için</p>
+    <div class="contact-links">
+      <a href="mailto:destek@yonetimcep.com" class="contact-link">&#9993;&#65039; destek@yonetimcep.com</a>
+      <a href="https://wa.me/905388747464" class="contact-link">&#128172; WhatsApp Destek</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 YönetimCep. Tüm hakları saklıdır. &nbsp;|&nbsp; <a href="mailto:destek@yonetimcep.com">destek@yonetimcep.com</a></p>
+  <p style="margin-top:6px;">6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında hazırlanmıştır.</p>
+</footer>
+
+</body>
+</html>
